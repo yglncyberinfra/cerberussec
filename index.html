@@ -1,1 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CerberusSec — Serviços de Pentest & Segurança</title>
+  <meta name="description" content="CerberusSec - pentests web, API, mobile e infraestrutura. Entregas técnicas e executivas com foco em risco real." />
+  <meta property="og:title" content="CerberusSec — Pentest & Segurança Ofensiva" />
+  <meta property="og:description" content="Pentests práticos com foco em risco real e remediação." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/hero.svg" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#hero" aria-label="CerberusSec home">
+        <img src="assets/img/logo.svg" alt="CerberusSec logo" class="logo">
+        <span class="brand-text">CerberusSec</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#servicos">Serviços</a>
+        <a href="#metodologia">Metodologia</a>
+        <a href="#planos">Planos</a>
+        <a href="#contato" class="btn-outline">Contato</a>
+      </nav>
+      <button id="menuBtn" class="menu-btn" aria-label="Abrir menu">☰</button>
+    </div>
+  </header>
 
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>CerberusSec — Serviços de Pentest & Segurança</h1>
+          <p class="lead">Avaliações de segurança práticas e focadas em impacto. Pentest web, API e infraestrutura — entregas técnicas e executivas com plano de remediação.</p>
+          <p class="cta-row">
+            <a href="#contato" class="btn-primary">Solicitar proposta</a>
+            <a href="#planos" class="btn-ghost">Ver planos</a>
+          </p>
+          <ul class="badges">
+            <li>NDA & confidencialidade</li>
+            <li>Relatório técnico + executivo</li>
+            <li>Re-teste incluso</li>
+          </ul>
+        </div>
+        <div class="hero-media">
+          <img src="assets/img/hero.svg" alt="Ilustração Cerberus" class="hero-image">
+          <div class="avatar-wrap">
+            <img src="assets/img/avatar-cerberus.svg" alt="Avatar Cerberus" class="avatar">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos" class="section">
+      <div class="container">
+        <h2 class="section-title">Serviços</h2>
+        <p class="section-sub">Cobertura que entrega impacto real para seu negócio.</p>
+        <div class="cards">
+          <article class="card">
+            <h3>Pentest Web & API</h3>
+            <p>Testes manuais e automatizados com foco em autorização, injeções, SSRF, lógica e APIs GraphQL/REST.</p>
+          </article>
+          <article class="card">
+            <h3>Pentest Mobile</h3>
+            <p>Android/iOS: análise de binários, TLS pinning, storage e APIs adjacentes.</p>
+          </article>
+          <article class="card">
+            <h3>Infra & Cloud</h3>
+            <p>Redes, AD, cloud posture (IaC, S3, roles) e testes de configuração insegura.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="metodologia" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Metodologia</h2>
+        <div class="grid-2">
+          <div class="item">
+            <h4>Como trabalhamos</h4>
+            <ul>
+              <li>Reconhecimento & mapeamento</li>
+              <li>Modelagem de ameaças</li>
+              <li>Exploração controlada e provas de conceito</li>
+              <li>Priorização por risco & negócio</li>
+              <li>Remediação e re-teste</li>
+            </ul>
+          </div>
+          <div class="item">
+            <h4>Entregáveis</h4>
+            <ul>
+              <li>Relatório executivo</li>
+              <li>Relatório técnico com evidências</li>
+              <li>Matriz MITRE ATT&CK</li>
+              <li>Debrief com time técnico</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="planos" class="section">
+      <div class="container">
+        <h2 class="section-title">Planos & Valores</h2>
+        <div class="cards plans">
+          <div class="plan card">
+            <h3>Essencial</h3>
+            <p class="price">A partir de R$ 3.500</p>
+            <ul>
+              <li>1 alvo (web ou API)</li>
+              <li>5–7 dias úteis</li>
+              <li>Re-teste 1x</li>
+            </ul>
+          </div>
+          <div class="plan card featured">
+            <h3>Profissional</h3>
+            <p class="price">A partir de R$ 8.500</p>
+            <ul>
+              <li>Web + API + infra</li>
+              <li>10–15 dias úteis</li>
+              <li>Suporte à correção</li>
+            </ul>
+          </div>
+          <div class="plan card">
+            <h3>Custom</h3>
+            <p class="price">Sob consulta</p>
+            <ul>
+              <li>Redução de escopo conforme necessidade</li>
+              <li>Red Team sob demanda</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Contato</h2>
+        <div class="grid-2">
+          <form id="contactForm" class="contact-form" action="mailto:seu-email@seudominio.com" method="post" enctype="text/plain">
+            <label>Nome
+              <input type="text" name="Nome" required>
+            </label>
+            <label>Email
+              <input type="email" name="Email" required>
+            </label>
+            <label>Empresa
+              <input type="text" name="Empresa">
+            </label>
+            <label>Escopo / Mensagem
+              <textarea name="Mensagem" rows="6"></textarea>
+            </label>
+            <div class="form-row">
+              <button type="submit" class="btn-primary">Enviar</button>
+              <button type="reset" class="btn-ghost">Limpar</button>
+            </div>
+            <p class="small">Observação: ao enviar, seu cliente de e-mail abrirá. Para integração com email/Zoho, troque a action por um endpoint (Formspree / Netlify Forms / backend).</p>
+          </form>
+
+          <div>
+            <h3>Informações</h3>
+            <p>Email: <a href="mailto:seu-email@seudominio.com">seu-email@seudominio.com</a></p>
+            <p>Atendemos Brasil e LATAM</p>
+            <div class="footer-images">
+              <img src="assets/img/footer-bg.svg" alt="decoration">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="left">
+          <img src="assets/img/logo.svg" alt="CerberusSec" class="logo-sm">
+          <div>© <span id="year"></span> CerberusSec — Serviços de Pentest & Segurança</div>
+        </div>
+        <div class="right">
+          <nav class="foot-nav">
+            <a href="#servicos">Serviços</a>
+            <a href="#metodologia">Metodologia</a>
+            <a href="#contato">Contato</a>
+          </nav>
+          <div class="socials">
+            <a href="#" aria-label="LinkedIn">LinkedIn</a>
+            <a href="#" aria-label="GitHub">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="av" x1="0" x2="1">
+      <stop offset="0" stop-color="#40E0D0"/>
+      <stop offset="1" stop-color="#60A5FA"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="#081426"/>
+  <g transform="translate(56,40)" stroke="url(#av)" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M40 300 C10 180, 80 80, 180 120 C220 60, 300 40, 360 120 C420 40, 500 160, 440 260 C400 320, 120 340, 40 300 Z"/>
+    <!-- three head arcs -->
+    <path d="M140 120 C160 80, 190 80, 210 120" />
+    <path d="M230 100 C250 70, 290 70, 310 100" />
+    <path d="M320 130 C340 90, 380 90, 400 130" />
+    <!-- eyes -->
+    <circle cx="200" cy="150" r="6" fill="#fff"/>
+    <circle cx="280" cy="140" r="6" fill="#fff"/>
+    <circle cx="360" cy="165" r="6" fill="#fff"/>
+  </g>
+</svg>
