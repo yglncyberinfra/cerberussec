@@ -1,0 +1,105 @@
+/* styles.css - Dark elegant theme with black and dark Red accents */
+:root{
+  --bg:#070708;
+  --panel:#0f1720;
+  --muted:#9aa4b2;
+  --accent:#710202;
+  --accent-2:#710202;
+  --glass: rgba(255,255,255,0.03);
+  --card:#0b1116;
+  --radius:12px;
+  --container:1100px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color-scheme: dark;
+  .carousel{overflow:hidden;position:relative;margin-top:1rem}
+  .carousel-track{display:flex;gap:1rem;overflow-x:auto;scroll-behavior:smooth}
+  .cert-card{min-width:200px;background:#111;padding:2rem;border-radius:10px;text-align:center;border:1px solid #222}
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:linear-gradient(180deg,var(--bg),#050506 120%);
+  color:#e6eef8;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
+  font-size:16px;
+}
+
+.container{
+  max-width:var(--container);
+  margin:0 auto;
+  padding:2rem;
+}
+
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:40;
+  backdrop-filter: blur(6px);
+  background: linear-gradient(180deg, rgba(5,6,7,0.6), rgba(5,6,7,0.35));
+  border-bottom:1px solid rgba(255,255,255,0.03);
+}
+
+.header-inner{
+  display:flex;
+  align-items:center;
+  gap:1rem;
+  justify-content:space-between;
+}
+
+.brand{display:flex;align-items:center;gap:.75rem;text-decoration:none;color:inherit}
+.brand .logo{width:44px;height:44px}
+.brand-text{font-weight:700;font-size:1.1rem;letter-spacing:0.4px}
+
+.main-nav{display:flex;gap:1rem;align-items:center}
+.main-nav a{color:var(--muted);text-decoration:none;padding:.5rem;border-radius:8px}
+.main-nav a:hover{color:var(--accent);}
+
+.cta{background:linear-gradient(90deg,var(--accent),var(--accent-2));padding:.6rem .85rem;border-radius:10px;color:white;text-decoration:none;font-weight:600}
+.menu-toggle{display:none;background:none;border:none;color:inherit;font-size:1.25rem}
+
+/* Hero */
+.hero{padding:4rem 0}
+.hero-inner{display:flex;gap:2rem;align-items:center;justify-content:space-between}
+.hero-content{max-width:640px}
+.hero h1{font-size:clamp(2rem,4vw,3rem);margin:.2rem 0}
+.lead{color:var(--muted);font-size:1.05rem;margin-bottom:1rem}
+.hero-cta{display:flex;gap:0.75rem}
+.btn{display:inline-block;padding:.6rem 1rem;border-radius:9px;background:var(--accent);color:white;text-decoration:none;font-weight:600}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06)}
+
+.hero-avatar img{width:220px;height:220px;border-radius:18px;background:var(--glass);padding:18px;display:block;}
+
+/* Sections */
+.section{padding:3rem 0}
+.section h2{font-size:1.6rem;margin-bottom:.5rem}
+.muted{color:var(--muted)}
+.grid-4{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1rem}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:1.25rem;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+
+.method-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;margin-top:1rem}
+.method ul{margin:0.5rem 0 0 1rem;color:var(--muted)}
+
+.team-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1rem}
+.member{background:var(--card);padding:1rem;border-radius:12px;border:1px solid rgba(255,255,255,0.03);text-align:center}
+.member img{width:96px;height:96px;border-radius:12px;margin-bottom:.5rem}
+
+.contact-block a{color:var(--accent);font-weight:700;text-decoration:none}
+
+/* Footer */
+.site-footer{border-top:1px solid rgba(255,255,255,0.03);padding:1.25rem 0;margin-top:2rem;background:transparent}
+.footer-inner{display:flex;gap:1rem;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.footer-brand{display:flex;gap:.75rem;align-items:center}
+
+/* Responsive */
+@media (max-width:900px){
+  .hero-inner{flex-direction:column-reverse;align-items:flex-start}
+  .menu-toggle{display:block}
+  .main-nav{position:absolute;top:64px;right:16px;background:var(--panel);padding:1rem;border-radius:8px;display:none;flex-direction:column}
+  .main-nav.open{display:flex}
+  .team-grid{grid-template-columns:1fr}
+  .footer-inner{flex-direction:column;align-items:flex-start;gap:.5rem}
+}
